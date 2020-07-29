@@ -5,4 +5,4 @@ RUN apt update && \
     export PATH=$PATH:$JAVA_HOME/bin && \
     git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git && \
     mvn package -f /boxfuse-sample-java-war-hello/pom.xml
-CMD ping 127.0.0.1        
+CMD ["/bin/bash"]        
