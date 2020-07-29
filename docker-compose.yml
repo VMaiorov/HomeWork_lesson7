@@ -16,6 +16,6 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./maven:/usr/local/tomcat/webapps
+      - ./maven:/opt/tomcat/webapps
     volumes_from:
       - maven
