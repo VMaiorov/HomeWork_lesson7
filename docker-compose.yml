@@ -11,4 +11,4 @@ services:
       - data_volume: /opt/apache-tomcat-8.5.57/webapps
 volumes:
   data_volume: 
-    - /data          
+    - ./data          
