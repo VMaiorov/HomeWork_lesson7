@@ -3,11 +3,11 @@ services:
   maven:
     build: maven
     volumes:
-      - data_volume: /boxfuse-sample-java-war-hello/target
+      - data_volume: ./boxfuse-sample-java-war-hello/target
 
   tomcat: 
     build: tomcat
     volumes:
-      - data_volume: /opt/apache-tomcat-8.5.57/webapps
+      - data_volume: ./opt/apache-tomcat-8.5.57/webapps
 volumes:
-  data_volume: /data          
+  data_volume: ./data          
